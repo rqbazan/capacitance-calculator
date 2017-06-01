@@ -4,6 +4,9 @@ buildscript {
     ext.kotlin_version = '1.1.2-4'
     ext.support_version = '25.3.1'
     ext.anko_version = '0.10.0'
+    ext.jscience_version = '4.3.1'
+    ext.la4j_version = '0.6.0'
+    ext.materialdialogs_version = '0.9.4.4'
 
     repositories {
         maven { url 'https://maven.google.com' }

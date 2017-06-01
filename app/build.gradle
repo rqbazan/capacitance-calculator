@@ -30,6 +30,15 @@ dependencies {
     compile "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
     compile "org.jetbrains.anko:anko-common:$anko_version"
     compile "com.android.support:appcompat-v7:$support_version"
+    compile "com.android.support:design:$support_version"
+    compile "org.la4j:la4j:$la4j_version"
+    compile "com.afollestad.material-dialogs:core:$materialdialogs_version"
+    compile "com.afollestad.material-dialogs:commons:$materialdialogs_version"
+    compile ("org.jscience:jscience:$jscience_version") {
+        exclude group: 'org.javolution', module: 'javolution'
+    }
     testCompile 'junit:junit:4.12'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
 }
+
+apply plugin: 'kotlin-android-extensions'
