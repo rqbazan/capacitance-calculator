@@ -3,11 +3,13 @@
     <string name="symbol_ohmios">&#937;</string>
     <string name="symbol_miliohmios">u&#937;</string>
     <string name="symbol_nanoohmios">n&#937;</string>
+    <string name="symbol_kiloohmios">k&#937;</string>
     <string name="symbol_voltios">V</string>
 
     <string name="unit_ohmios">Ohmios</string>
     <string name="unit_miliohmios">Miliohmios</string>
     <string name="unit_nanoohmios">Nanoohmios</string>
+    <string name="unit_kiloohmios">Kiloohmios</string>
     <string name="unit_voltios">Voltios</string>
 
     <string name="all_test_text">00000000</string>
