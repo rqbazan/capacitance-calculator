@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CurrentCalculator</string>
+    <string name="symbol_ohmios">&#937;</string>
+    <string name="symbol_voltios">V</string>
+    <string name="all_test_text">00000000</string>
+    <string name="i1">I<sub>1</sub></string>
+    <string name="i2">I<sub>2</sub></string>
+    <string name="i3">I<sub>3</sub></string>
+</resources>

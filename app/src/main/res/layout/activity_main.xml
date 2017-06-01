@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="santiago.project.university.currentcalculator.MainActivity">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/margin_main_start_end_image"
+        android:layout_marginStart="@dimen/margin_main_start_end_image"
+        android:layout_marginRight="@dimen/margin_main_start_end_image"
+        android:layout_marginEnd="@dimen/margin_main_start_end_image"
+        android:src="@drawable/circuito" />
+
+    <!-- R1 -->
+    <LinearLayout
+        android:id="@+id/r1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_main_first_elements"
+        android:layout_marginLeft="@dimen/margin_left_main_r1_r7"
+        android:layout_marginStart="@dimen/margin_left_main_r1_r7"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/edt_value_r1"
+            android:layout_width="@dimen/width_main_edt_value"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:textSize="@dimen/text_size_main"
+            android:maxLines="1"
+            android:maxLength="@integer/max_length_edt_value"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_unit_r1"
+            android:layout_width="@dimen/width_main_btn"
+            android:layout_height="@dimen/width_main_btn"
+            android:gravity="center"
+            android:text="@string/symbol_ohmios"
+            android:textSize="@dimen/text_size_main"
+            android:textAllCaps="false"
+            style="@style/Widget.AppCompat.Light.DropDownItem.Spinner"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"/>
+
+    </LinearLayout>
+
+    <!-- R2 -->
+    <LinearLayout
+        android:id="@+id/r2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_main_first_elements"
+        android:layout_marginLeft="@dimen/margin_left_main_r2"
+        android:layout_marginStart="@dimen/margin_left_main_r2"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/edt_value_r2"
+            android:layout_width="@dimen/width_main_edt_value"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:textSize="@dimen/text_size_main"
+            android:maxLines="1"
+            android:maxLength="@integer/max_length_edt_value"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_unit_r2"
+            android:layout_width="@dimen/width_main_btn"
+            android:layout_height="@dimen/width_main_btn"
+            android:gravity="center"
+            android:text="@string/symbol_ohmios"
+            android:textSize="@dimen/text_size_main"
+            android:textAllCaps="false"
+            style="@style/Widget.AppCompat.Light.DropDownItem.Spinner"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"/>
+
+    </LinearLayout>
+
+    <!-- R5 -->
+    <LinearLayout
+        android:id="@+id/r5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_main_first_elements"
+        android:layout_marginLeft="@dimen/margin_left_main_r5_r6"
+        android:layout_marginStart="@dimen/margin_left_main_r5_r6"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/edt_value_r5"
+            android:layout_width="@dimen/width_main_edt_value"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:textSize="@dimen/text_size_main"
+            android:maxLines="1"
+            android:maxLength="@integer/max_length_edt_value"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_unit_r5"
+            android:layout_width="@dimen/width_main_btn"
+            android:layout_height="@dimen/width_main_btn"
+            android:gravity="center"
+            android:text="@string/symbol_ohmios"
+            android:textSize="@dimen/text_size_main"
+            android:textAllCaps="false"
+            style="@style/Widget.AppCompat.Light.DropDownItem.Spinner"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"/>
+
+    </LinearLayout>
+
+    <!-- V8 -->
+    <LinearLayout
+        android:id="@+id/v8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_main_v8"
+        android:layout_marginLeft="@dimen/margin_left_main_v8"
+        android:layout_marginStart="@dimen/margin_left_main_v8"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/edt_value_v8"
+            android:layout_width="@dimen/width_main_edt_value"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:textSize="@dimen/text_size_main"
+            android:maxLines="1"
+            android:maxLength="@integer/max_length_edt_value"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_unit_v8"
+            android:layout_width="@dimen/width_main_btn"
+            android:layout_height="@dimen/width_main_btn"
+            android:gravity="center"
+            android:text="@string/symbol_voltios"
+            android:textSize="@dimen/text_size_main"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAllCaps="false"
+            style="@style/Widget.AppCompat.Light.DropDownItem.Spinner"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+            android:enabled="false"/>
+
+    </LinearLayout>
+
+    <!-- R3 -->
+    <LinearLayout
+        android:id="@+id/r3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_main_r3"
+        android:layout_marginLeft="@dimen/margin_left_main_r3"
+        android:layout_marginStart="@dimen/margin_left_main_r3"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/edt_value_r3"
+            android:layout_width="@dimen/width_main_edt_value"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:textSize="@dimen/text_size_main"
+            android:maxLines="1"
+            android:maxLength="@integer/max_length_edt_value"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_unit_r3"
+            android:layout_width="@dimen/width_main_btn"
+            android:layout_height="@dimen/width_main_btn"
+            android:gravity="center"
+            android:text="@string/symbol_ohmios"
+            android:textSize="@dimen/text_size_main"
+            android:textAllCaps="false"
+            style="@style/Widget.AppCompat.Light.DropDownItem.Spinner"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"/>
+
+    </LinearLayout>
+
+    <!-- R4 -->
+    <LinearLayout
+        android:id="@+id/r4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_main_r4"
+        android:layout_marginLeft="@dimen/margin_left_main_r4"
+        android:layout_marginStart="@dimen/margin_left_main_r4"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/edt_value_r4"
+            android:layout_width="@dimen/width_main_edt_value"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:textSize="@dimen/text_size_main"
+            android:maxLines="1"
+            android:maxLength="@integer/max_length_edt_value"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_unit_r4"
+            android:layout_width="@dimen/width_main_btn"
+            android:layout_height="@dimen/width_main_btn"
+            android:gravity="center"
+            android:text="@string/symbol_ohmios"
+            android:textSize="@dimen/text_size_main"
+            android:textAllCaps="false"
+            style="@style/Widget.AppCompat.Light.DropDownItem.Spinner"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"/>
+
+    </LinearLayout>
+
+    <!-- V10 -->
+    <LinearLayout
+        android:id="@+id/v10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_main_v10"
+        android:layout_marginRight="@dimen/margin_right_main_v10"
+        android:layout_marginEnd="@dimen/margin_right_main_v10"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/edt_value_v10"
+            android:layout_width="@dimen/width_main_edt_value"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:textSize="@dimen/text_size_main"
+            android:maxLines="1"
+            android:maxLength="@integer/max_length_edt_value"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_unit_v10"
+            android:layout_width="@dimen/width_main_btn"
+            android:layout_height="@dimen/width_main_btn"
+            android:gravity="center"
+            android:text="@string/symbol_voltios"
+            android:textSize="@dimen/text_size_main"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAllCaps="false"
+            style="@style/Widget.AppCompat.Light.DropDownItem.Spinner"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+            android:enabled="false"/>
+
+    </LinearLayout>
+
+    <!-- R7 -->
+    <LinearLayout
+        android:id="@+id/r7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_bottom_main_last_elements"
+        android:layout_marginLeft="@dimen/margin_left_main_r1_r7"
+        android:layout_marginStart="@dimen/margin_left_main_r1_r7"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/edt_value_r7"
+            android:layout_width="@dimen/width_main_edt_value"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:textSize="@dimen/text_size_main"
+            android:maxLines="1"
+            android:maxLength="@integer/max_length_edt_value"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_unit_r7"
+            android:layout_width="@dimen/width_main_btn"
+            android:layout_height="@dimen/width_main_btn"
+            android:gravity="center"
+            android:text="@string/symbol_ohmios"
+            android:textSize="@dimen/text_size_main"
+            android:textAllCaps="false"
+            style="@style/Widget.AppCompat.Light.DropDownItem.Spinner"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"/>
+
+    </LinearLayout>
+
+    <!-- V9 -->
+    <LinearLayout
+        android:id="@+id/v9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_bottom_main_last_elements"
+        android:layout_marginLeft="@dimen/margin_left_main_v9"
+        android:layout_marginStart="@dimen/margin_left_main_v9"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/edt_value_v9"
+            android:layout_width="@dimen/width_main_edt_value"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:textSize="@dimen/text_size_main"
+            android:maxLines="1"
+            android:maxLength="@integer/max_length_edt_value"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_unit_v9"
+            android:layout_width="@dimen/width_main_btn"
+            android:layout_height="@dimen/width_main_btn"
+            android:gravity="center"
+            android:text="@string/symbol_voltios"
+            android:textSize="@dimen/text_size_main"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAllCaps="false"
+            style="@style/Widget.AppCompat.Light.DropDownItem.Spinner"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+            android:enabled="false"/>
+
+    </LinearLayout>
+
+    <!-- R6 -->
+    <LinearLayout
+        android:id="@+id/r6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_bottom_main_last_elements"
+        android:layout_marginLeft="@dimen/margin_left_main_r5_r6"
+        android:layout_marginStart="@dimen/margin_left_main_r5_r6"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/edt_value_r6"
+            android:layout_width="@dimen/width_main_edt_value"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:textSize="@dimen/text_size_main"
+            android:maxLines="1"
+            android:maxLength="@integer/max_length_edt_value"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_unit_r6"
+            android:layout_width="@dimen/width_main_btn"
+            android:layout_height="@dimen/width_main_btn"
+            android:gravity="center"
+            android:text="@string/symbol_ohmios"
+            android:textSize="@dimen/text_size_main"
+            android:textAllCaps="false"
+            style="@style/Widget.AppCompat.Light.DropDownItem.Spinner"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"/>
+
+    </LinearLayout>
+
+    <!-- Corrientes a encontrar -->
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/i1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_main_middle_elements"
+        android:layout_marginLeft="@dimen/margin_left_main_i1"
+        android:layout_marginStart="@dimen/margin_left_main_i1"
+        android:text="@string/i1"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_main_currents"
+        android:textStyle="bold|italic"
+        android:padding="5dp" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/i2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_main_middle_elements"
+        android:layout_marginLeft="@dimen/margin_left_main_i2"
+        android:layout_marginStart="@dimen/margin_left_main_i2"
+        android:text="@string/i2"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_main_currents"
+        android:textStyle="bold|italic"
+        android:padding="5dp" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/i3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_main_middle_elements"
+        android:layout_marginRight="@dimen/margin_right_main_i3"
+        android:layout_marginEnd="@dimen/margin_right_main_i3"
+        android:text="@string/i3"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_main_currents"
+        android:textStyle="bold|italic"
+        android:padding="5dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"/>
+
+
+</RelativeLayout>

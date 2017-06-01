@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size_main">12sp</dimen>
+
+    <dimen name="margin_top_main_first_elements">18dp</dimen>
+    <dimen name="margin_top_main_middle_elements">145dp</dimen>
+    <dimen name="margin_bottom_main_last_elements">26dp</dimen>
+
+    <dimen name="margin_top_main_v8">100dp</dimen>
+    <dimen name="margin_top_main_v10">185dp</dimen>
+    <dimen name="margin_left_main_v8">28dp</dimen>
+    <dimen name="margin_left_main_v9">252dp</dimen>
+    <dimen name="margin_right_main_v10">44dp</dimen>
+
+    <dimen name="margin_left_main_r1_r7">110dp</dimen>
+    <dimen name="margin_left_main_r2">252dp</dimen>
+    <dimen name="margin_left_main_r3">177dp</dimen>
+    <dimen name="margin_left_main_r4">312dp</dimen>
+    <dimen name="margin_left_main_r5_r6">395dp</dimen>
+    <dimen name="margin_top_main_r3">110dp</dimen>
+    <dimen name="margin_top_main_r4">180dp</dimen>
+
+
+    <dimen name="margin_left_main_i1">142dp</dimen>
+    <dimen name="margin_left_main_i2">290dp</dimen>
+    <dimen name="margin_right_main_i3">140dp</dimen>
+
+    <dimen name="width_main_edt_value">55dp</dimen>
+    <dimen name="width_main_btn">40dp</dimen>
+    <dimen name="margin_main_start_end_image">20dp</dimen>
+    <dimen name="text_size_main_currents">20sp</dimen>
+</resources>
