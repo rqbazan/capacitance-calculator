@@ -15,4 +15,5 @@ interface IMainView {
     fun setupListOfUResistance(units: Array<UResistance>)
     fun setupListOfUVolt(units: Array<UVolt>)
     fun showResult(I1: Double, I2: Double, I3: Double)
+    fun checkAllInputsRequired(): Boolean
 }

@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.support.v7.widget.AppCompatButton
 import android.support.v7.widget.AppCompatEditText
 import android.support.v7.widget.AppCompatTextView
-import android.view.View
 import com.afollestad.materialdialogs.MaterialDialog
 import santiago.project.university.currentcalculator.R
 import santiago.project.university.currentcalculator.contract.IMainView
@@ -21,10 +20,15 @@ import santiago.project.university.currentcalculator.presenter.MainPresenter
 
 class MainActivity : AppCompatActivity(), IMainView {
     val presenter: IMainPresenter by lazy { MainPresenter(this) }
+
     var uResistanceAsPretty: List<String>? = null
     var uResistances: Array<UResistance>? = null
     var uVoltAsPretty: List<String>? = null
     var uVolts: Array<UVolt>? = null
+
+    var edts: List<AppCompatEditText>? = null
+    var btnsResistances: List<AppCompatButton>? = null
+    var btnsVolts: List<AppCompatButton>? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,7 +38,7 @@ class MainActivity : AppCompatActivity(), IMainView {
     }
 
     override fun onClickBtnSolve() {
-        if (testInputs()) {
+        if (checkAllInputsRequired()) {
             try {
                 val r1 = getResistanceValue(edt_value_r1, btn_unit_r1)
                 val r2 = getResistanceValue(edt_value_r2, btn_unit_r2)
@@ -56,7 +60,7 @@ class MainActivity : AppCompatActivity(), IMainView {
     override fun onClickBtnResistanceUnit(button: AppCompatButton) {
         if (uResistanceAsPretty != null) {
             MaterialDialog.Builder(this)
-                    .title("Unidades de resistencia")
+                    .title(R.string.title_main_resistances_choose_dialog)
                     .items(uResistanceAsPretty!!)
                     .itemsCallback({ _, _, _, text ->
                         val unit = uResistances!![uResistanceAsPretty!!.indexOf(text)]
@@ -69,7 +73,7 @@ class MainActivity : AppCompatActivity(), IMainView {
     override fun onClickBtnVoltUnit(button: AppCompatButton) {
         if (uVoltAsPretty != null) {
             MaterialDialog.Builder(this)
-                    .title("Unidades de voltaje")
+                    .title(R.string.title_main_volts_choose_dialog)
                     .items(uVoltAsPretty!!)
                     .itemsCallback({ _, _, _, text ->
                         val unit = uVolts!![uVoltAsPretty!!.indexOf(text)]
@@ -80,26 +84,45 @@ class MainActivity : AppCompatActivity(), IMainView {
     }
 
     fun setupButtons() {
-        btn_unit_r1.tag = UResistance.OHMIOS
-        btn_unit_r2.tag = UResistance.OHMIOS
-        btn_unit_r3.tag = UResistance.OHMIOS
-        btn_unit_r4.tag = UResistance.OHMIOS
-        btn_unit_r5.tag = UResistance.OHMIOS
-        btn_unit_r6.tag = UResistance.OHMIOS
-        btn_unit_r7.tag = UResistance.OHMIOS
-        btn_unit_v8.tag = UVolt.VOLT
-        btn_unit_v9.tag = UVolt.VOLT
-        btn_unit_v10.tag = UVolt.VOLT
-        btn_unit_r1.setOnClickListener { onClickBtnResistanceUnit(btn_unit_r1) }
-        btn_unit_r2.setOnClickListener { onClickBtnResistanceUnit(btn_unit_r2) }
-        btn_unit_r3.setOnClickListener { onClickBtnResistanceUnit(btn_unit_r3) }
-        btn_unit_r4.setOnClickListener { onClickBtnResistanceUnit(btn_unit_r4) }
-        btn_unit_r5.setOnClickListener { onClickBtnResistanceUnit(btn_unit_r5) }
-        btn_unit_r6.setOnClickListener { onClickBtnResistanceUnit(btn_unit_r6) }
-        btn_unit_r7.setOnClickListener { onClickBtnResistanceUnit(btn_unit_r7) }
-        btn_unit_v8.setOnClickListener { onClickBtnVoltUnit(btn_unit_v8) }
-        btn_unit_v9.setOnClickListener { onClickBtnVoltUnit(btn_unit_v9) }
-        btn_unit_v10.setOnClickListener { onClickBtnVoltUnit(btn_unit_v10) }
+        edts = listOf<AppCompatEditText>(
+                edt_value_r1,
+                edt_value_r2,
+                edt_value_r3,
+                edt_value_r4,
+                edt_value_r5,
+                edt_value_r6,
+                edt_value_r7,
+                edt_value_v8,
+                edt_value_v9,
+                edt_value_v10
+        )
+
+        btnsResistances = listOf<AppCompatButton>(
+                btn_unit_r1,
+                btn_unit_r2,
+                btn_unit_r3,
+                btn_unit_r4,
+                btn_unit_r5,
+                btn_unit_r6,
+                btn_unit_r7
+        )
+
+        btnsVolts = listOf<AppCompatButton>(
+                btn_unit_v8,
+                btn_unit_v9,
+                btn_unit_v10
+        )
+
+        btnsResistances?.forEach {
+            it.tag = UResistance.OHMIOS
+            it.setOnClickListener { onClickBtnResistanceUnit(it as AppCompatButton) }
+        }
+
+        btnsVolts?.forEach {
+            it.tag = UVolt.VOLT
+            it.setOnClickListener { onClickBtnVoltUnit(it as AppCompatButton) }
+        }
+
         fab_solve.setOnClickListener { onClickBtnSolve() }
     }
 
@@ -129,54 +152,20 @@ class MainActivity : AppCompatActivity(), IMainView {
         return Volt(value, unit)
     }
 
-    fun testInputs(): Boolean {
-        if (edt_value_r1.text.isEmpty()) {
-            edt_value_r1.error = "Campo requerido"
-            return false
-        }
-        if (edt_value_r2.text.isEmpty()) {
-            edt_value_r2.error = "Campo requerido"
-            return false
-        }
-        if (edt_value_r3.text.isEmpty()) {
-            edt_value_r3.error = "Campo requerido"
-            return false
-        }
-        if (edt_value_r4.text.isEmpty()) {
-            edt_value_r4.error = "Campo requerido"
-            return false
-        }
-        if (edt_value_r5.text.isEmpty()) {
-            edt_value_r5.error = "Campo requerido"
-            return false
-        }
-        if (edt_value_r6.text.isEmpty()) {
-            edt_value_r6.error = "Campo requerido"
-            return false
-        }
-        if (edt_value_r7.text.isEmpty()) {
-            edt_value_r7.error = "Campo requerido"
-            return false
-        }
-        if (edt_value_v8.text.isEmpty()) {
-            edt_value_v8.error = "Campo requerido"
-            return false
-        }
-        if (edt_value_v9.text.isEmpty()) {
-            edt_value_v9.error = "Campo requerido"
-            return false
-        }
-        if (edt_value_v10.text.isEmpty()) {
-            edt_value_v10.error = "Campo requerido"
-            return false
-        }
-        return true
+    override fun checkAllInputsRequired(): Boolean {
+        return edts?.all {
+            if (it.text.isEmpty()) {
+                it.error = getString(R.string.msg_main_field_required)
+                return false
+            }
+            return true
+        } ?: false
     }
 
     override fun showResult(I1: Double, I2: Double, I3: Double) {
         val dialog = MaterialDialog.Builder(this)
-                .title("Resultado")
-                .positiveText("Ok")
+                .title(R.string.title_main_result_dialog)
+                .positiveText(R.string.action_main_ok)
                 .customView(R.layout.layout_result, false)
                 .build()
         dialog.customView?.find<AppCompatTextView>(R.id.txt_i1)?.text = "I1 = ${I1}A"

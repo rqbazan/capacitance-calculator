@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CurrentCalculator</string>
+    <string name="app_name">Current Calculator</string>
     <string name="symbol_ohmios">&#937;</string>
     <string name="symbol_miliohmios">u&#937;</string>
     <string name="symbol_nanoohmios">n&#937;</string>
@@ -16,4 +16,9 @@
     <string name="i1">I<sub>1</sub></string>
     <string name="i2">I<sub>2</sub></string>
     <string name="i3">I<sub>3</sub></string>
+    <string name="msg_main_field_required">Campo requerido</string>
+    <string name="title_main_result_dialog">Resultado</string>
+    <string name="action_main_ok">Ok</string>
+    <string name="title_main_resistances_choose_dialog">Unidades de resistencia</string>
+    <string name="title_main_volts_choose_dialog">Unidades de voltaje</string>
 </resources>
