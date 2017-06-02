@@ -1,16 +1,29 @@
 <resources>
     <string name="app_name">Current Calculator</string>
+
     <string name="symbol_ohmios">&#937;</string>
-    <string name="symbol_miliohmios">u&#937;</string>
+    <string name="symbol_miliohmios">m&#937;</string>
+    <string name="symbol_microohmios">u&#937;</string>
     <string name="symbol_nanoohmios">n&#937;</string>
     <string name="symbol_kiloohmios">k&#937;</string>
-    <string name="symbol_voltios">V</string>
 
-    <string name="unit_ohmios">Ohmios</string>
-    <string name="unit_miliohmios">Miliohmios</string>
-    <string name="unit_nanoohmios">Nanoohmios</string>
-    <string name="unit_kiloohmios">Kiloohmios</string>
-    <string name="unit_voltios">Voltios</string>
+    <string name="symbol_voltios">V</string>
+    <string name="symbol_milivoltios">mV</string>
+    <string name="symbol_microvoltios">uV</string>
+    <string name="symbol_nanovoltios">nV</string>
+    <string name="symbol_kilovoltios">kV</string>
+
+    <string name="fullname_ohmios">Ohmios</string>
+    <string name="fullname_miliohmios">Miliohmios</string>
+    <string name="fullname_microohmios">Microohmios</string>
+    <string name="fullname_nanoohmios">Nanoohmios</string>
+    <string name="fullname_kiloohmios">Kiloohmios</string>
+
+    <string name="fullname_voltios">Voltios</string>
+    <string name="fullname_milivoltios">Milivoltios</string>
+    <string name="fullname_microvoltios">Microvoltios</string>
+    <string name="fullname_nanovoltios">Nanovoltios</string>
+    <string name="fullname_kilovoltios">Kilovoltios</string>
 
     <string name="all_test_text">00000000</string>
     <string name="i1">I<sub>1</sub></string>

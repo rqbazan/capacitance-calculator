@@ -5,7 +5,7 @@ import santiago.project.university.currentcalculator.model.entity.Resistance
 import santiago.project.university.currentcalculator.model.entity.Volt
 
 /**
- * Created by cesar on 01/06/17.
+ * Created by santiago on 01/06/17.
  */
 interface IMainPresenter {
     fun loadListOfUnits()

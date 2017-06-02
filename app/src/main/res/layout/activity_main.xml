@@ -149,8 +149,7 @@
             android:textColor="@color/colorPrimaryDark"
             android:textAllCaps="false"
             style="@style/Widget.AppCompat.Light.DropDownItem.Spinner"
-            android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
-            android:enabled="false"/>
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored" />
 
     </LinearLayout>
 
@@ -255,8 +254,7 @@
             android:textColor="@color/colorPrimaryDark"
             android:textAllCaps="false"
             style="@style/Widget.AppCompat.Light.DropDownItem.Spinner"
-            android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
-            android:enabled="false"/>
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored" />
 
     </LinearLayout>
 
@@ -327,8 +325,7 @@
             android:textColor="@color/colorPrimaryDark"
             android:textAllCaps="false"
             style="@style/Widget.AppCompat.Light.DropDownItem.Spinner"
-            android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
-            android:enabled="false"/>
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored" />
 
     </LinearLayout>
 

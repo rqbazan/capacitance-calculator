@@ -5,7 +5,7 @@ import santiago.project.university.currentcalculator.model.entity.UResistance
 import santiago.project.university.currentcalculator.model.entity.UVolt
 
 /**
- * Created by cesar on 01/06/17.
+ * Created by santiago on 01/06/17.
  */
 class MainInteractor : IMainInteractor {
     override fun getAllUnitResistance(): Array<UResistance> {

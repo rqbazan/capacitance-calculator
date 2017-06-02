@@ -7,11 +7,12 @@ import javax.measure.unit.SI
 import javax.measure.unit.Unit
 
 /**
- * Created by cesar on 01/06/17.
+ * Created by santiago on 01/06/17.
  */
 enum class UResistance(@StringRes val symbol: Int, @StringRes val fullname: Int, val unit: Unit<ElectricResistance>) {
-    OHMIOS(R.string.symbol_ohmios, R.string.unit_ohmios, SI.OHM),
-    MILIOHMIOS(R.string.symbol_miliohmios, R.string.unit_miliohmios, SI.MILLI(SI.OHM)),
-    NANOOHMIOS(R.string.symbol_nanoohmios, R.string.unit_nanoohmios, SI.NANO(SI.OHM)),
-    KILOOHMIOS(R.string.symbol_kiloohmios, R.string.unit_kiloohmios, SI.KILO(SI.OHM))
+    KILOOHMIOS(R.string.symbol_kiloohmios, R.string.fullname_kiloohmios, SI.KILO(SI.OHM)),
+    OHMIOS(R.string.symbol_ohmios, R.string.fullname_ohmios, SI.OHM),
+    MILIOHMIOS(R.string.symbol_miliohmios, R.string.fullname_miliohmios, SI.MILLI(SI.OHM)),
+    MICROOHMIOS(R.string.symbol_microohmios, R.string.fullname_microohmios, SI.MICRO(SI.OHM)),
+    NANOOHMIOS(R.string.symbol_nanoohmios, R.string.fullname_nanoohmios, SI.NANO(SI.OHM))
 }

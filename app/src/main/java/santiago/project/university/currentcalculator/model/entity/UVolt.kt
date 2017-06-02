@@ -7,8 +7,12 @@ import javax.measure.unit.SI
 import javax.measure.unit.Unit
 
 /**
- * Created by cesar on 01/06/17.
+ * Created by santiago on 01/06/17.
  */
 enum class UVolt(@StringRes val symbol: Int, @StringRes val fullname: Int, val unit: Unit<ElectricPotential>) {
-    VOLT(R.string.symbol_voltios, R.string.unit_voltios, SI.VOLT)
+    KILOVOLT(R.string.symbol_kilovoltios, R.string.fullname_kilovoltios, SI.KILO(SI.VOLT)),
+    VOLT(R.string.symbol_voltios, R.string.fullname_voltios, SI.VOLT),
+    MILIVOLT(R.string.symbol_milivoltios, R.string.fullname_milivoltios, SI.MILLI(SI.VOLT)),
+    MICROVOLT(R.string.symbol_microvoltios, R.string.fullname_microvoltios, SI.MICRO(SI.VOLT)),
+    NANOVOLT(R.string.symbol_nanovoltios, R.string.fullname_nanovoltios, SI.NANO(SI.VOLT))
 }

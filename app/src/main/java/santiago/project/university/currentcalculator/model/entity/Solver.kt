@@ -7,7 +7,7 @@ import org.la4j.matrix.DenseMatrix
 import javax.measure.quantity.ElectricResistance
 
 /**
- * Created by cesar on 01/06/17.
+ * Created by santiago on 01/06/17.
  */
 class Solver {
     val converter = Converter()

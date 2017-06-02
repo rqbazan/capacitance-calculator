@@ -10,7 +10,7 @@ import santiago.project.university.currentcalculator.model.entity.Volt
 import santiago.project.university.currentcalculator.model.interactor.MainInteractor
 
 /**
- * Created by cesar on 01/06/17.
+ * Created by santiago on 01/06/17.
  */
 class MainPresenter(val view: IMainView, val model: IMainInteractor = MainInteractor()) : IMainPresenter {
     val solver = Solver()
